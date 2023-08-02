@@ -1,0 +1,41 @@
+.aa{
+    background-color: skyblue;
+    color: white;
+    background-image: url(pexels-pixabay-237272.jpg)
+}
+.nav .nav-item .nav-link{
+    color: white;
+}
+.nav .nav .navbar-brand{
+    color: white;
+}
+.btn.btn-primary{
+    color: brown;
+}
+.ab{
+    text-align: justify;
+    color: darkcyan;
+}
+.ac{
+    background-image: url(flowers-gd54c0b1e2_1280.jpg);
+    
+    
+}
+.ad{
+    background-image: url(pexels-marios-potsis-17728072.jpg);
+    
+    
+}
+.ae{
+    padding-left: 10%;
+    padding-top: 20%;
+}
+.af{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.ag{
+   text-align: center;
+}
+
