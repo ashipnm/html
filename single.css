@@ -1,28 +1,35 @@
 .aa{
     background-color: skyblue;
     color: white;
-    background-image: url(pexels-pixabay-237272.jpg)
+    background-image: url(pexels-pixabay-237272.jpg );width: 1635px;
+    
+    
 }
+
 .nav .nav-item .nav-link{
     color: white;
 }
 .nav .nav .navbar-brand{
     color: white;
 }
-.btn.btn-primary{
-    color: brown;
-}
+
 .ab{
     text-align: justify;
     color: darkcyan;
 }
 .ac{
-    background-image: url(flowers-gd54c0b1e2_1280.jpg);
+    background-image: url(pexels-karolina-grabowska-4032973.jpg);
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 5%;
     
     
 }
 .ad{
-    background-image: url(pexels-marios-potsis-17728072.jpg);
+    background-image: url(pexels-karolina-grabowska-4230630.jpg);
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 5%;
     
     
 }
@@ -37,5 +44,44 @@
 }
 .ag{
    text-align: center;
+   width: 800%;
 }
+.ah{
+   
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+.ah img{
+    border-radius: 50% ;
+    vertical-align: middle;
+    
 
+}
+h4
+{
+    color: gray;
+    text-align: center;
+    padding-top: 10%;
+    
+}
+h6{
+    color: gray;
+}
+.fill :hover{
+    color: brown;
+}
+.aj{
+    background-color: cyan;
+}
+.nav{
+    color: gray;
+    /* height: 500px; */
+}
+.nav .nav-link:hover{
+    color: white;
+}
+.nav-link{
+    color: grey;
+    font-weight: 900;
+}
