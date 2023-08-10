@@ -1,0 +1,72 @@
+.a{
+    background-color: gray;
+    color: white;
+    padding-left: 10%;
+
+}
+h1{
+    padding-left: 30%;
+    padding-top: 10px;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav .nav-item .nav-link{
+    color: black;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding-top: 20px;
+
+}
+.b{
+    padding-top: 20px;
+    
+    
+}
+.carousel-control-prev{
+    color: greenyellow;
+}
+.ab{
+    color: black;
+    
+    
+    padding-bottom: 30%;
+    padding-right: 55%;
+    
+}
+.ab h2{
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ac{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.ac h1{
+    color: black;
+}
+.ad img{
+    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+    padding-top: 5%;
+    padding-left: 10px;
+}
+.ad h6{
+    padding-left: 20%;
+    padding-top: 5%;
+}
+.ad button{
+    align-items: center;
+    position: relative; left: 90px;
+    position: relative; top: 10px;
+}
+.checked {
+    color: orange;
+}
+
+
+
+
+
+    
