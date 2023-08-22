@@ -1,5 +1,5 @@
 .a{
-    background-color: gray;
+    background-color: cadetblue;
     color: white;
     padding-left: 10%;
 
@@ -41,8 +41,18 @@ h1{
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    
 }
 .ac h1{
+    color: black;
+}
+.acc{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.acc h1{
     color: black;
 }
 .ad img{
@@ -61,12 +71,116 @@ h1{
     position: relative; left: 90px;
     position: relative; top: 10px;
 }
-.checked {
-    color: orange;
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.ae{
+    padding-left: 5%;
+    padding-right: 1%;
+    padding-bottom: 6%;
+}
+.af{
+    padding-right: 1%;
+}
+.ag{
+    padding-right: 5%;
+    padding-left: 3%;
+}
+.ah{
+    padding-left: 15%;
+}
+.ai{
+    padding-left: 25%;
+}
+.ak {
+    background-color: black;
+    padding-left: 5%;
+    padding-top: 2%;
+    color: whitesmoke;
+}
+.ak h2{
+    color: green;
+}
+.al{
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.al h6{
+    padding-top: 1%;
+}
+h6 :hover{
+    color: green;
+}
+.am{
+    padding-top: 3%;
+}
+.am h2
+{
+    padding-bottom: 9%;
+}
+button{
+    background-color: green;
+    color: white;
+}
+.an{
+    background-color: black;
+}
+.ao{
+    padding-left: 6%;
+}
+.ap{
+    padding-left: 20%;
+}
+input{
+    background-color: black;
+    color: white;
+}
+.ba{
+    background-color: darkslategray;
+    padding-left: 6%;
+    padding-top: 2%;
+    color: white;
 }
 
-
-
-
-
-    
+.abc{
+border-bottom: 10px;
+size: 100px;
+}
