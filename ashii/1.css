@@ -1,0 +1,62 @@
+.aa{
+
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+h5{
+    color: orange;
+}
+.ab{
+    padding-top: 15px;
+}
+.ac{
+    background-image: url(meeting-g10bbce6ad_1280.jpg );
+    padding-bottom: 10px;
+}
+.ad{
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.ae{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+p{
+    text-align: center;
+    padding-top: 10px;
+}
+.af{
+    padding-left: 90px;
+    padding-top: 10px;
+}
+.ag{
+    padding-right: 70px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+h6{
+
+     text-align-last: center;
+} 
+.b{
+background-color: black;
+color: white;
+padding-left: 10px;
+}
+.bb{
+    background-color: black;
+    color: white;
+
+}
+.nav .nav-item .nav-link:hover{
+    color: orange;
+}
+.nav .nav-item .nav-link{
+    color: black;
+}
