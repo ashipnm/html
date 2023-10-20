@@ -1,22 +1,19 @@
 password=input("enter a password:")
-upper=0
-lower=0
 length=0
-
-if len(password)>= 8:
-    length = True
-    
+Upper=0
+Lower=0
+Digit=0
+if len(password)>=8:
+    length=1
     for letter in password:
-        if letter.islower():
-            lower = True
+        if letter.isdigit():
+            Digit=1
         elif letter.isupper():
-            upper = True
-        elif letter.isdigit():
-            digit = True
-            
-
-
-if length and lower and upper and digit:
-    print('That is a valid password.')
+            Upper=1 
+        elif letter.islower():
+            Lower=1
+if length and Upper and Lower and Digit: 
+    print("Valid Password.")
 else:
-    print('That password is not valid.')
+    print("Invalid Password.")               
+   
