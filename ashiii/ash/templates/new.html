@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    
+</head>
+<body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <h1>Catwalk India</h1>
+    <p>Typically, catwalks are located in positions hidden from audience view or directly above an audience, and are considered "behind-the-scenes". For example, many proscenium theaters have a series of two or more catwalks running parallel to the proscenium arch above a false ceiling. Stairs or a ladder up to the catwalks is usually located somewhere backstage. In modern theatres, many architects design catwalks into the "look" of the theatre. In black box theatres, catwalks and pipe grids may be the only architectural feature.
+
+        A catwalk may also be placed upstage of the proscenium as part of the fly system. These may be fixed, or they may be able to be raised and lowered.
+        
+        In older decorated theaters, the catwalks are not designed to be seen by the audience. Sometimes, because of this, they are placed in the attic area above the auditorium’s ceiling, where slots and movable panels provide openings into the auditorium from the ceiling.
+        
+        </p>
+    <img src="{% static 'images/fff.jpg' %}" alt="" width="300" height="300">
+    <h3>Employees Details</h3>
+    <table>
+        {% for i in a %}
+        <tr>
+            <td>{{i.emp_id}}</td>
+            <td>{{i.emp_name}}</td>
+            <td>{{i.emp_salary}}</td>
+            <td>{{i.designation}}</td>
+            <td>{{i.place}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <table>
+        {% for i in d %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+        </tr>
+        {% endfor %}
+        <a href="{% url 'form1' %}">form</a>
+    </table>
+    <img src="{% static 'images/pic1.jpg' %}" alt="" width="250" height="250">
+    <img src="{% static 'images/pic4.jpg' %}" alt="" width="250" height="250">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, qui deleniti nam officiis cupiditate modi culpa sed. Dolores temporibus voluptatum, excepturi nostrum asperiores, dolorum provident non voluptas natus vel eveniet?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non eveniet illum sit dolore? Ex iure doloribus consectetur illo officiis laborum! Maxime ipsum consequuntur quae suscipit velit quo ea. Doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel laudantium iusto saepe reiciendis atque quo expedita quis molestiae animi, dolores, temporibus ex modi debitis inventore facilis veniam! Maiores, atque.</p>
+    
+</body>
+</html>
