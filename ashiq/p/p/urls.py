@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path,include
 from app1 import views
 
+from django.conf.urls.static import static
+from django.conf import settings
+
 urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
@@ -27,8 +30,10 @@ urlpatterns = [
 
     path('add/',views.add,name='add'), 
     path('view/',views.booklist,name='view'),
-    path('delete_book/,int:p>',views.delete_book,name='delete_book'),
-    path('view_book/,int:p>',views.view_book,name='view_book'),
-    path('edit_book/,int:p>',views.edit_book,name='edit_book'),
+    path('delete_book/<int:p>',views.delete_book,name='delete_book'),
+    path('view_book/<int:p>',views.view_book,name='view_book'),
+    path('edit_book/<int:p>',views.edit_book,name='edit_book'),
 
 ]
+if(settings.DEBUG):
+    urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

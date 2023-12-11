@@ -19,10 +19,11 @@
         <td>{{i.title}}</td>
         <td>{{i.author}}</td>
         <td><a href="{{i.pdf.url}}">Download</a></td>
-        <td><a href="{{% url 'delete_book i.pk %}}" class="btn-danger">DELETE</a></td>
-        <td><a href="{{% url 'edit_book i.pk %}}" class="btn-danger">EDIT</a></td>
-        <td><a href="{{% url 'view_book i.pk %}}" class="btn-danger">VIEW</a></td>
+        <td><a href="{% url 'delete_book' i.pk %}" class="btn-danger">DELETE</a></td>
+        <td><a href="{% url 'edit_book' i.pk %}" class="btn-danger">EDIT</a></td>
+        <td><a href="{% url 'view_book' i.pk %}" class="btn-danger">VIEW</a></td>
 
-        {% endfor%}
+        {% endfor %}
+        {% endblock %}
         </tr>
 </div>

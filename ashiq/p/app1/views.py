@@ -9,6 +9,7 @@ from app1.form import *
 # Create your views here.
 def home(request):
     return render(request,'home.html')
+
 def signup(request):
     if request.method == 'POST':
    
@@ -26,40 +27,46 @@ def signup(request):
                 user.set_password(password)
                 user.save()
                 print("Success")
-                return redirect('login_user')
+                return redirect(login_user)
         else:
             messages.info(request, 'Both password are not mathching')
             return redirect(signup) 
    
-        print("no post method") 
-        return render(request,'signup.html')
-def login_user(requst):
-    if requst.method== 'POST':
-        username =requst.POST['username']
-        password=requst.POST['password']
-        user= User.authenticate(username=username, password=password)    
+        # print("no post method") 
+    return render(request,'signup.html')
+
+def login_user(request):
+    if request.method== 'POST':
+        username =request.POST['username']
+        password=request.POST['password']
+        user= authenticate(username=username, password=password)    
         if user is not None:
-            login(requst.user)
-            return redirect(home)
+                login(request,user)
+                return redirect(home)
         else:
-            messages.info(requst,'user not exist')
+            messages.info(request,'user not exist')
             print('user not exist')
             return redirect(login_user)
-    return render(requst,'login.html')
+    return render(request,'login.html')
+
 def user_logout(request):
     logout(request)
-    return redirect(user_logout)   
-def   add(request):
+    return redirect(login_user)   
+
+
+def add(request):
     form=bookform()
     if(request.method=="POST"):
         form=bookform(request.POST,request.FILES)
         if(form.is_valid()):
             form.save()
-            return home(request)
-        return render(request,'add.html',{'form': form})
+            return booklist(request)
+    return render(request,'add.html',{'form': form})
+    
 def booklist(request):
     b=Book.objects.all()
     return render (request,'view.html',{'b':b})    
+
 def edit_book(request,p):
     b=Book.objects.get(pk=p)
     form=bookform(instance=b)
@@ -69,9 +76,11 @@ def edit_book(request,p):
             form.save()
             return home(request)
     return render(request,'add.html',{'form':form})
+
 def view_book(requst,p):
     b=Book.objects.get(pk=p)
     return render(requst,'book.html',{'b':b})
+
 def delete_book(request,p):
     b=Book.objects.get(pk=p)
     b.delete()
